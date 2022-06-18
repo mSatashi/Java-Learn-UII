@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="441.0" prefWidth="580.0" style="-fx-background-color: #1076A0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalapp.ViewStatisticController">
+   <children>
+      <Button layoutX="243.0" layoutY="394.0" mnemonicParsing="false" onAction="#backToTable" prefHeight="33.0" prefWidth="94.0" text="Back Button" />
+      <BarChart fx:id="brc" layoutX="14.0" layoutY="14.0" legendSide="RIGHT" prefHeight="373.0" prefWidth="552.0" style="-fx-background-color: #ffffff;" title="Jumlah Jenis Tanaman">
+        <xAxis>
+          <CategoryAxis label="Jenis Tanaman" prefHeight="34.0" prefWidth="359.0" side="BOTTOM" fx:id="x" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="y" label="Hasil" side="LEFT" />
+        </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>
